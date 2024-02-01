@@ -1,0 +1,75 @@
+Welcome to Online Text Editor (formerly EditPad.org) <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teddy Talk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .teddy {
+            position: relative;
+        }
+
+        .teddy img {
+            width: 200px;
+        }
+
+        .teddy p {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #noButton {
+            display: inline-block;
+        }
+
+        #noButton:hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-1000px, -1000px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="teddy">
+            <img src="teddy.png" alt="Teddy Bear" id="teddyImg">
+            <p id="teddyText">Will you talk with me?</p>
+            <div class="buttons">
+                <button id="yesButton">Yes</button>
+                <button id="noButton">No</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("yesButton").addEventListener("click", function() {
+            alert("Teddy gives you a kiss!");
+        });
+    </script>
+</body>
+</html>
+- your online plain text editor. Enter or paste your text here. To download and save it, click on the button below.
